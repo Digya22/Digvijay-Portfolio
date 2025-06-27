@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,2z00;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css-file/one.css">
+    <link rel="stylesheet" type="text/css" href="css-file/projects.css">
+    <link rel="stylesheet" type="text/css" href="css-file/contact.css">
+    <link rel="stylesheet" type="text/css" href="css-file/about.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <!-- <a href="myphoto.jpg" target="_blank">
+                    <img src="myphoto.jpg" alt="icon" class=icon>
+                </a> -->
+                <img src="image/myphoto.jpg" alt="Profile Icon" id="profile-icon" class=icon>
+                <div class="name">Digvijay's Portfolio</div>
+
+
+            </div>
+            <!-- this code is for the icon to be displayed in circle after clicking -->
+            <div class="modal" id="image-modal">
+                <img src="image/myphoto.jpg" alt="Profile Picture">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</li></a>
+                    <li><a href="#about" class="nav-link">About</li></a>
+                    <li><a href="#projects" class="nav-link">Projects</li></a>
+                    <li><a href="#contact" class="nav-link">Contact</li></a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <img src="image/computer-program-coding-screen_53876-138060.jpg" alt="Background" class="background_image">
+            <div class="leftsection">
+                Hi,My Name is <span class="purple">Digvijay</span>
+                <div> and I am a Passionate</div>
+                <!-- <div class="color">Web Developer</div> -->
+                <span id="element"></span>
+                <div class="resume-container">
+                    <!-- <a href="Resume (1).pdf" target="_blank" class="resume-button">My Resume</a> -->
+                    <button id="resumeBtn" class="resume-button">My Resume</button>
+                </div>
+                <!-- Full-screen Resume Overlay -->
+                <div id="resumeOverlay" class="resume">
+                    <button id="closeBtn">&times;</button>
+                    <iframe id="iframeResume" src=""></iframe>
+                </div>
+
+            </div>
+            </div>
+            <div class="rightsection">
+                <img src="image/pngtree.png">
+            </div>
+        </section>
+        <hr>
+        <section class="Secondsection">
+            <h1 id="about" class="about-title">About</h1>
+            <!-- <div class="aboutcontainer">
+                <div class="aboutsection">
+                    <h2>My Name is </h2>
+                    <span>Digvijay Ankush Thakur.</span>
+                    <h4>I am 21 Years Old. </h4>
+                    <h4>Address - Bijalinagar Parabchawl Kankavli District Sindhudurga State Maharashtra</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sapiente facere ex
+                        deleniti rem ipsam. Earum dicta excepturi est blanditiis, expedita velit nostrum delectus et
+                        dolorem cupiditate corrupti, cum pariatur ipsam facere dolor quia rem harum ea architecto.
+                        Eveniet ipsum autem iure, adipisci et rerum odio provident molestiae optio deserunt.</h4>
+
+                </div>
+            </div> -->
+
+            <div class="scroll-box introduction">
+                <h2>Introduction</h2>
+                <p>HI, My name is <span>Digvijay Ankush Thakur .</span> <br>I am a passionate computer science student
+                    specializing in Artificial Intelligence and Machine Learning, currently pursuing my bachelor's
+                    degree at Finolex Academy in Ratnagiri. My childhood fascination with technology led me to the field
+                    of computer science, where I find immense joy in solving challenges and constantly learning new
+                    things. Among various domains, I have a special interest in front-end development because I love
+                    exploring creative designs and bringing them to life through hardcoded HTML, CSS, and JavaScript. I
+                    enjoy crafting visually appealing and user-friendly interfaces, continuously improving my skills to
+                    stay updated with the latest trends in web development. My goal is to create seamless and engaging
+                    digital experiences while deepening my expertise in AI and ML...<br> I have one youtube channel
+                    named as ,<span> आम्ही #कोकणी </span> known for spreading cultural things of kokan region in
+                    Maharastra.because of the youtube channel i started learning Editing which I loves more afterwords.
+                </p>
+                <h2>Qualification</h2>
+                <p>10th-S.M.High School(92.80%)<br>12th-Kankavli college Kankavli(93.20%)<br>Bachelor's in Computer
+                    Science Ai&Ml(9 pointer)</p>
+            </div>
+
+            <!-- Left Bottom: Personal Details -->
+            <div class="personal-info">
+                <p><span class="underline">Age </span>- 21years</p>
+                <p><span class="underline">Residence </span>- India</p>
+                <p><span class="underline">Address </span>- Bijlinagar Parabchawl, Kankavli 416602</p>
+            </div>
+
+            <!-- Right Top: Skill Circles with Titles -->
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <p>HTML</p>
+                        <!-- <div class="circle" data-percent="100">100%</div> -->
+                        <div class="skillss" data-percentage="100">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="progress" cx="60" cy="60" r="50" />
+                            </svg>
+                            <div class="label">0%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <!-- <div class="circle" data-percent="90">90%</div> -->
+                        <div class="skillss" data-percentage="90">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="progress" cx="60" cy="60" r="50" />
+                            </svg>
+                            <div class="label">0%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <!-- <div class="circle" data-percent="80">80%</div> -->
+                        <div class="skillss" data-percentage="80">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="progress" cx="60" cy="60" r="50" />
+                            </svg>
+                            <div class="label">0%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Python</p>
+                        <!-- <div class="circle" data-percent="70">70%</div> -->
+                        <div class="skillss" data-percentage="70">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="progress" cx="60" cy="60" r="50" />
+                            </svg>
+                            <div class="label">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Bottom: Language & Hobby -->
+            <div class="scroll-box language-box">
+                <h2>Language</h2>
+                <p>English--------------<span class="progress">90%</span></p>
+                <p>Marathi------------- <span class="progress">100%</span></p>
+                <p>Hindi---------------- <span class="progress">70%</span></p>
+                <h2>Hobby</h2>
+                <p>Photography, Coding, listening Songs,Playing Pakhvaj</p>
+            </div>
+
+        </section>
+        <hr>
+        <section class="thirdsection" id="projects-section">
+            <h1 id="projects">Projects</h1>
+            <div class="project-grid">
+
+                <div class="photo project-item" id="to-blind" data-project="to-blind">
+                    <img src="image/blind/blind4.jpg" class="prof" id="blind">
+                </div>
+                <div class="photo project-item" data-project="ai-bot">
+                    <img src="image/ai bot.jpg" class="prof">
+                </div>
+                <div class="photo project-item" data-project="sign-lang">
+                    <img src="image/image (5).png" class="prof">
+                </div>
+                <div class="photo project-item" data-project="auto-paper">
+                    <img src="image/paper/paper3.jpg" class="prof">
+                </div>
+            </div>
+        </section>
+        <!-- Project Details Section (Initially Hidden) -->
+        <section class="project-details" id="project-details-section" style="display: none;">
+            <button id="backToProjects" class="back-button">← Back</button>
+            <h1 id="project-title">Project Title</h1>
+            <p id="project-description">Project description goes here...</p>
+            <p id="project-extra-info">Additional project details...</p> <!-- New extra info -->
+            <div class="project-images">
+                <img id="project-image" src="" alt="Project Image" class="pro-image">
+            </div>
+            <a id="project-github" href="#" target="_blank" class="github-link">View on GitHub</a> <!-- GitHub link -->
+
+
+        </section>
+        <hr>
+        <section class="fourthsection">
+            <h1 id="contact">Contact</h1>
+            <div class="contact-container">
+                <!-- Left Side: Social Media & Thank You Message -->
+                <div class="contact-left">
+                    <h2>Let's Connect!</h2>
+                    <p>Thank you for visiting my portfolio! If you liked my work, feel free to connect with me on my
+                        social media platforms.</p>
+                    <p>You can also leave feedback using the form. I appreciate your support!</p>
+                    <div class="email-number">
+                        <li><i class="bx bxs-send"></i>dt22062003@gmail.com</li>
+                        <li><i class="bx bxs-phone"></i>9145431772</li>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/digvijay-thakur-1b0600284" target="_blank">
+                            <!-- <img src="icons/linkedin-logo-24.png" alt="LinkedIn"> -->
+                            <i class='bx bxl-linkedin' id="icons"></i>
+                        </a>
+                        <a href="https://www.instagram.com/digya__thakur" target="_blank">
+                            <!-- <img src="icons\instagram-logo-24.png" alt="Instagram"> -->
+                            <i class='bx bxl-instagram-alt' id="icons"></i>
+                        </a>
+                        <a href="https://github.com/Digya22" target="_blank">
+                            <!-- <img src="icons/github-logo-24.png" alt="GitHub"> -->
+                            <i class='bx bxl-github' id="icons"></i>
+                        </a>
+                        <a href="https://youtube.com/@आम्हीकोकणी-न6ट" target="_blank">
+                            <!-- <img src="icons/youtube-logo-24.png" alt="Email"> -->
+                            <i class='bx bxl-youtube' id="icons"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact-right">
+                    <h2>Send Me Your Feedback</h2>
+                    <form id="contact-form" class="input">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="message">Your Feedback</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                            required></textarea>
+
+                        <button type="submit" onclick="sendMail()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <footer class="footerdiv">
+                <div class="footer">
+                    All rights Reserved
+                </div>
+            </footer> -->
+        </section>
+        <hr>
+        <!-- <hr>
+        <section></section> -->
+    </main>
+
+    <script src="js-file/main.js"></script>
+    <script src="js-file/projects.js"></script>
+    <script src="js-file/contact.js"></script>
+    <script src="js-file/about.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Typed js used to animate text -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Vlogger'],
+            typeSpeed: 150,
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "VFbhuLOrWmrEZWDoh",
+            });
+        })();
+    </script>
+
+
+</body>
+
+</html>
